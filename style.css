@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#0065B7 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.imagem-cadeado{
+    width: 50px;
+}
+
+.imagem-trevo{
+    color: #2294AF;
+    width: 50px;
+}
+
+.conteudo__principal{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+
+.conteudo__mega{
+   color: white;
+    border-radius: 5px;
+    padding: 100px;
+}
+
+.titulo__principal{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: 800;
+}
+
+.paragrafo{
+    font-size:25px;
+    font-weight: 600;
+}
+
+.container-input{
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 2px;
+    border: none;
+}
+
+.container-botao{
+    padding: 8px;
+    border-radius: 2px;
+    background-color:#FF9E07;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .coin {
+    width: 30px;
+    height: 30px;
+    background-color: #ffd700; /* cor da moeda (amarelo ouro) */
+    border-radius: 50%;
+    position: absolute;
+    top: -30px; /* posição inicial acima da tela */
+    animation: fall 2s linear infinite; /* nome da animação, duração, tipo de interpolação e repetição */
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(100vh); /* move a moeda para a parte inferior da tela */
+    }
+  }
+
+  @media (max-width: 768px) {
+   
+   body{
+    overflow: hidden;
+    margin: auto;
+   }
+
+   .conteudo__principal{
+    overflow: hidden;
+    
+   }
+
+   .titulo__principal{
+    font-size: 40px;
+    margin-bottom: 10px;
+   }
+
+   .container-botao{
+    margin-top: 10px;
+   }
+
+  }
